@@ -1,0 +1,31 @@
+{
+  "name": "dumbmachine",
+  "version": "1.0.0",
+  "description": "Drum machine with silly sounds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihatetoast/dumbmachine.git"
+  },
+  "keywords": [
+    "vanilla",
+    "javascript",
+    "drums"
+  ],
+  "author": "Katy Cassidy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihatetoast/dumbmachine/issues"
+  },
+  "homepage": "https://github.com/ihatetoast/dumbmachine#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}
