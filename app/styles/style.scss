@@ -1,3 +1,14 @@
+/*
+CODE FOR STINKY FOOTER
+
+...gonna just leave that typo as is
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #site {
   display: flex;
   min-height: 100vh;
@@ -5,5 +16,69 @@
 }
 
 .site-content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+}
+// variables:
+// mixins:
+@mixin key($h, $w, $t, $r, $b, $l) {
+  height: $h;
+  width: $w;
+  margin: $t $r $b $l;
+  text-align: center;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  background-color: mediumspringgreen;
+}
+.key-div,
+.keys-row {
+  display: flex;
+}
+.key-div {
+  flex-direction: column;
+}
+
+//KEYS:
+.keys,
+.space-bar,
+.arrow-keys {
+  border: 0.5rem outset pink;
+  background-color: rgb(247, 162, 177);
+}
+.keys {
+  @include key(4em, 4em, 0.25em, 0.25em, 0.25em, 0.25em);
+}
+.num-row {
+  margin-left: 1em;
+}
+.querty-row {
+  margin-left: 3em;
+}
+.asdf-row {
+  margin-left: 5em;
+}
+.zxcv-row {
+  margin-left: 7em;
+}
+.space-arrows-row {
+  margin-left: 15.3em;
+}
+.space-bar {
+  @include key(4em, 22em, 0.25em, 1em, 0.25em, 1em);
+}
+.arrow-keys-row,
+.up-down-div {
+  display: flex;
+}
+.arrow-keys-row {
+  margin-left: 9.5em;
+}
+.up-down-div {
+  flex-direction: column;
+}
+.arrow-keys {
+  @include key(2em, 4em, 0.1em, 0.1em, 0.1em, 0.1em);
 }
