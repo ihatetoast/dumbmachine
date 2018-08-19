@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
   keys.forEach(k => {
     k.addEventListener('transitionend', remTrans);
   });
-  console.log(keys);
 
   window.addEventListener('keydown', makeNoise);
 });
