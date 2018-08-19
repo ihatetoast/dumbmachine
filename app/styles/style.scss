@@ -35,6 +35,7 @@ $headers: 'Arvo', serif;
   width: $w;
   margin: $t $r $b $l;
   text-align: center;
+  font-family: $kbd;
 }
 .keyboard {
   border-radius: 0.25rem;
@@ -45,7 +46,6 @@ $headers: 'Arvo', serif;
 kbd,
 .sound {
   display: block;
-  font-family: $kbd;
 }
 
 .key-div,
