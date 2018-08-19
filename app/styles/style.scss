@@ -21,6 +21,14 @@ CODE FOR STINKY FOOTER
   flex: 1;
 }
 // variables:
+$black: #0d0e11;
+$grey: #46484c;
+$silver: #9eb1d8;
+
+$kbd: 'Cutive Mono', monospace;
+$text: 'Montserrat', sans-serif;
+$headers: 'Arvo', serif;
+
 // mixins:
 @mixin key($h, $w, $t, $r, $b, $l) {
   height: $h;
@@ -29,10 +37,17 @@ CODE FOR STINKY FOOTER
   text-align: center;
 }
 .keyboard {
+  border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
-  background-color: mediumspringgreen;
+  background-color: $silver;
 }
+kbd,
+.sound {
+  display: block;
+  font-family: $kbd;
+}
+
 .key-div,
 .keys-row {
   display: flex;
@@ -45,11 +60,12 @@ CODE FOR STINKY FOOTER
 .keys,
 .space-bar,
 .arrow-keys {
-  border: 0.5rem outset pink;
-  background-color: rgb(247, 162, 177);
+  border: 0.5rem outset $grey;
+  background-image: linear-gradient(to right, #434343 0%, $black 100%);
+  color: white;
 }
 .keys {
-  @include key(4em, 4em, 0.25em, 0.25em, 0.25em, 0.25em);
+  @include key(4.5em, 4.5em, 0.25em, 0.25em, 0.25em, 0.25em);
 }
 .num-row {
   margin-left: 1em;
@@ -67,7 +83,7 @@ CODE FOR STINKY FOOTER
   margin-left: 15.3em;
 }
 .space-bar {
-  @include key(4em, 22em, 0.25em, 1em, 0.25em, 1em);
+  @include key(4.5em, 22em, 0.25em, 1em, 0.25em, 1em);
 }
 .arrow-keys-row,
 .up-down-div {
@@ -80,5 +96,5 @@ CODE FOR STINKY FOOTER
   flex-direction: column;
 }
 .arrow-keys {
-  @include key(2em, 4em, 0.1em, 0.1em, 0.1em, 0.1em);
+  @include key(2em, 4.5em, 0.1em, 0.1em, 0.1em, 0.1em);
 }
