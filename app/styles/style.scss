@@ -57,44 +57,51 @@ kbd,
 }
 
 //KEYS:
-.keys,
-.space-bar,
-.arrow-keys {
+.key {
   border: 0.5rem outset $grey;
   background-image: linear-gradient(to right, #434343 0%, $black 100%);
   color: white;
+  transition: all 0.1s;
 }
 .keys {
   @include key(4.5em, 4.5em, 0.25em, 0.25em, 0.25em, 0.25em);
 }
-.num-row {
-  margin-left: 1em;
-}
-.querty-row {
-  margin-left: 3em;
-}
-.asdf-row {
-  margin-left: 5em;
-}
-.zxcv-row {
-  margin-left: 7em;
-}
+
 .space-arrows-row {
-  margin-left: 15.3em;
+  margin-left: 20.3em;
 }
 .space-bar {
-  @include key(4.5em, 22em, 0.25em, 1em, 0.25em, 1em);
+  @include key(4.5em, 24.5em, 0.25em, 1em, 0.25em, 1em);
 }
+.tab-key,
+.delete-key {
+  @include key(4.5em, 6.5em, 0.25em, 0.25em, 0.25em, 0.25em);
+}
+.shift-key {
+  @include key(4.5em, 10.5em, 0.25em, 0.25em, 0.25em, 0.25em);
+}
+.capslock-key,
+.return-key {
+  @include key(4.5em, 8em, 0.25em, 0.25em, 0.25em, 0.25em);
+}
+
 .arrow-keys-row,
 .up-down-div {
   display: flex;
 }
 .arrow-keys-row {
-  margin-left: 9.5em;
+  margin-left: 11em;
 }
 .up-down-div {
   flex-direction: column;
 }
 .arrow-keys {
   @include key(2em, 4.5em, 0.1em, 0.1em, 0.1em, 0.1em);
+}
+
+//When key hit, .hit is added. will listen only to transform
+
+.hit {
+  box-shadow: 4px 4px 2px chartreuse; //just to test. style later
+  transform: scale(1.1);
 }
