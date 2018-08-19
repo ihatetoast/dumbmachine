@@ -1,5 +1,4 @@
 console.log("dude, I'm gulping");
-console.log("dude, I'm gulping");
 document.addEventListener('DOMContentLoaded', function() {
   //MAKE THE SOUNDS:
   // keycode captured on window evt at bottom of code:

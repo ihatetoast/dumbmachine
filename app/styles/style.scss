@@ -234,3 +234,10 @@ kbd,
   box-shadow: 0px 0px 5px 2px $silver;
   transform: scale(1.1);
 }
+
+//When key hit, .hit is added. will listen only to transform
+
+.hit {
+  box-shadow: 0px 0px 5px 3px $silver; //just to test. style later
+  transform: scale(1.1);
+}
