@@ -1,1 +1,1 @@
-console.log("dude, I'm gulping");
+console.log("dude, I'm gulping"),document.addEventListener("DOMContentLoaded",function(){function e(e){"transform"===e.propertyName&&this.classList.remove("hit")}document.querySelectorAll(".key").forEach(t=>{t.addEventListener("transitionend",e)}),window.addEventListener("keydown",function(e){const t=document.querySelector(`audio[data-key="${e.keyCode}"]`),n=document.querySelector(`.key[data-key="${e.keyCode}"]`);t&&(t.currentTime=0,n.classList.add("hit"),t.play())})});
